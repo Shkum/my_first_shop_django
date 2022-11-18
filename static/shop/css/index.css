@@ -1,0 +1,83 @@
+h2 {
+    color: darkred;
+    font-size: 30px;
+    text-align: center;
+}
+
+.testclass {
+    color: blue;
+}
+h3 {
+    text-align: center;
+    color: green;
+}
+h1 {
+    color: darkred;
+    text-align: center;
+}
+
+
+input[type=text], input[type=email] {
+    width: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+label {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #005cbf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #007bff;
+}
+
+button:hover {background-color: #005cbf}
+
+button:active {
+  background-color: #117a8b;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+h3 {
+    font-size: 20px;
+}
+div form {
+    text-align: center;
+
+}
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.top-container {
+    padding-top: 15%;
+}
+
+.general-container {
+    background-image: url('../img/bg.jpg');
+    background-color: grey;
+    height: 100%;
+}
+.general-container form {
+    margin-top: 55px;
+}

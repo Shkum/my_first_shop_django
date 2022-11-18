@@ -1,0 +1,40 @@
+{% extends 'shop/base.html' %}
+
+{%  load static %}
+
+{% block title %} Pythagoras matrix {% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href={% static 'shop/css/bootstrap.css' %}>
+    <link rel="stylesheet" href={% static 'shop/css/index.css' %}>
+{% endblock %}
+
+
+{% block content %}
+<div class="general-container">
+    <div class="container top-container">
+        <div class="row">
+            <div class="col-lg-6 offset-3">
+                <h1 class="title">Our shop will open soon </h1>
+                <h1 class="title">Leave your email in the form below: </h1>
+                <form class="" action="" method="POST" class="form-inline text-center">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <br>{{ form.name }}
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">Email:</label>
+{#                         <input type="email" class="form-control" name="{{ form.name.email }}" >#}
+                        <br>  {{ form.email }}
+                    </div>
+                    <button type="submit" class="">Send</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
